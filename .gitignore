@@ -1,0 +1,7 @@
+.idea
+src/doc
+*.iml
+.gradle
+build
+target
+
