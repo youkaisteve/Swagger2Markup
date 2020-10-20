@@ -12,3 +12,8 @@ mvn compile
 # You'll find the output files in ${project.basedir}/doc
 ```
 
+# optional
+
+```bash
+mvn package -Dswagger.project.url=http://localhost:3001/ -Dswagger.project.name=ibuild-web
+```
