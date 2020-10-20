@@ -16,4 +16,8 @@ mvn compile
 
 ```bash
 mvn package -Dswagger.project.url=http://localhost:3001/ -Dswagger.project.name=ibuild-web
+
+# successful url
+http://172.16.0.131:3010/api-docs/html/${swagger.project.name}.html
+http://172.16.0.131:3010/api-docs/pdf/${swagger.project.name}.pdf
 ```
