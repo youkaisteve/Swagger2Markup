@@ -56,7 +56,7 @@
                 </configuration>
                 <executions>
                     <execution>
-                        <phase>compile</phase>
+                        <phase>package</phase>
                         <goals>
                             <goal>convertSwagger2markup</goal>
                         </goals>
@@ -116,30 +116,30 @@
                             <sourceHighlighter>coderay</sourceHighlighter>
                         </configuration>
                     </execution>
-<!--                    <execution>-->
-<!--                        <id>output-pdf</id>-->
-<!--                        <phase>package</phase>-->
-<!--                        <goals>-->
-<!--                            <goal>process-asciidoc</goal>-->
-<!--                        </goals>-->
-<!--                        <configuration>-->
-<!--                            <backend>pdf</backend>-->
-<!--                            <outputFile>${asciidoctor.pdf.output.directory}/${swagger.project.name}.pdf</outputFile>-->
-<!--                            <sourceHighlighter>coderay</sourceHighlighter>-->
-<!--                            <doctype>book</doctype>-->
-<!--                            <attributes>-->
-<!--                                <toc>left</toc>-->
-<!--                                <toclevels>3</toclevels>-->
-<!--                                <numbered></numbered>-->
-<!--                                <hardbreaks></hardbreaks>-->
-<!--                                <sectlinks></sectlinks>-->
-<!--                                <sectanchors></sectanchors>-->
-<!--                                <pdf-fontsdir>${doc.base.style}/fonts</pdf-fontsdir>-->
-<!--                                <pdf-stylesdir>${doc.base.style}/themes</pdf-stylesdir>-->
-<!--                                <pdf-style>cn</pdf-style>-->
-<!--                            </attributes>-->
-<!--                        </configuration>-->
-<!--                    </execution>-->
+                    <execution>
+                        <id>output-pdf</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>process-asciidoc</goal>
+                        </goals>
+                        <configuration>
+                            <backend>pdf</backend>
+                            <outputFile>${asciidoctor.pdf.output.directory}/${swagger.project.name}.pdf</outputFile>
+                            <sourceHighlighter>coderay</sourceHighlighter>
+                            <doctype>book</doctype>
+                            <attributes>
+                                <toc>left</toc>
+                                <toclevels>3</toclevels>
+                                <numbered></numbered>
+                                <hardbreaks></hardbreaks>
+                                <sectlinks></sectlinks>
+                                <sectanchors></sectanchors>
+                                <pdf-fontsdir>${doc.base.style}/fonts</pdf-fontsdir>
+                                <pdf-stylesdir>${doc.base.style}/themes</pdf-stylesdir>
+                                <pdf-style>cn</pdf-style>
+                            </attributes>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
             <plugin>
