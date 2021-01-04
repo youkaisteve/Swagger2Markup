@@ -159,18 +159,18 @@
                             <url>scp://root:yzw+1234@172.16.0.131/opt/ibuild-static/api-docs/html</url>
                         </configuration>
                     </execution>
-<!--                    <execution>-->
-<!--                        <id>upload-pdf</id>-->
-<!--                        <phase>package</phase>-->
-<!--                        <goals>-->
-<!--                            <goal>upload-single</goal>-->
-<!--                        </goals>-->
-<!--                        <configuration>-->
-<!--                            <serverId>ibuild-qc</serverId>-->
-<!--                            <fromFile>${asciidoctor.pdf.output.directory}/${swagger.project.name}.pdf</fromFile>-->
-<!--                            <url>scp://root:yzw+1234@172.16.0.131/opt/ibuild-static/api-docs/pdf</url>-->
-<!--                        </configuration>-->
-<!--                    </execution>-->
+                    <execution>
+                        <id>upload-pdf</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>upload-single</goal>
+                        </goals>
+                        <configuration>
+                            <serverId>ibuild-qc</serverId>
+                            <fromFile>${asciidoctor.pdf.output.directory}/${swagger.project.name}.pdf</fromFile>
+                            <url>scp://root:yzw+1234@172.16.0.131/opt/ibuild-static/api-docs/pdf</url>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
         </plugins>
